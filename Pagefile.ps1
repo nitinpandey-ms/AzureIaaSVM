@@ -10,6 +10,8 @@ Note that both the Pagefile and Memory Dump are INTENTIONALLY configured in the 
 
 User input and script progress logs are saved in C:\PagefileMemoryDumpConfiguration.log
 
+Testing
+
 #>
 
 #Creaet a Function and call it
