@@ -21,6 +21,7 @@ function Get-ChosenDrive {
     #Select the drive where you want to configure the Pagefile and Memory Dump
     $drive = Read-Host "Enter the drive letter where you want to configure the Pagefile and Memory Dump (Example: D): "
     $chosendrive = $drive + ":"
+    New-Item -ItemType Directory -Path $chosendrive\MemoryDump -Force
     mkdir $drive\MemoryDump -Force
     Write-Host "The drive selected is $chosendrive" -ForegroundColor Red -BackgroundColor White
     
