@@ -1,0 +1,239 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cordia New";
+	panose-1:2 11 3 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;}
+.MsoChpDefault
+	{font-size:11.0pt;
+	font-family:"Aptos",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-AU link=blue vlink="#96607D" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='margin-bottom:0cm;line-height:normal;vertical-align:
+     middle'><span lang=EN-US style='font-family:"Calibri",sans-serif'>Download
+     <a
+     href="https://github.com/nitinpandey-ms/AzureIaaSVM/blob/main/Pagefile.ps1">https://github.com/nitinpandey-ms/AzureIaaSVM/blob/main/Pagefile.ps1</a>
+     in the server where we are changing the Pagefile</span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;line-height:normal;vertical-align:
+     middle'><span lang=EN-US style='font-family:"Calibri",sans-serif'>Open
+     PowerShell as Administrator.</span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;line-height:normal;vertical-align:
+     middle'><span lang=EN-US style='font-family:"Calibri",sans-serif'>Execute
+     this command: Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope
+     LocalMachine -Force</span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;line-height:normal;vertical-align:
+     middle'><span lang=EN-US style='font-family:"Calibri",sans-serif'>If there
+     is a Security Warning as below, press R and proceed</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:27.0pt;line-height:normal'><span lang=EN-US style='font-family:
+"Calibri",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:27.0pt;line-height:normal'><span lang=EN-US style='font-family:
+"Calibri",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:27.0pt;line-height:normal'><span style='font-family:"Calibri",sans-serif'><img
+border=0 width=563 height=79 id="Picture 7" src="How%20to_files/image001.jpg"
+alt="A blue screen with white text&#10;&#10;Description automatically generated"></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:27.0pt;line-height:normal'><span lang=EN-US style='font-family:
+"Calibri",sans-serif'>&nbsp;</span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='margin-bottom:0cm;line-height:normal;vertical-align:
+     middle'><span lang=EN-US style='font-family:"Calibri",sans-serif'>The
+     first output that this script shows is the total size and free space of
+     all disks.</span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;line-height:normal;vertical-align:
+     middle'><span lang=EN-US style='font-family:"Calibri",sans-serif'>Calculate
+     and chose a drive in which we can accommodate the size of (RAM * 2) + 10
+     GB</span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;line-height:normal;vertical-align:
+     middle'><span lang=EN-US style='font-family:"Calibri",sans-serif'>For
+     example, if size of RAM is 8 GB, then chose a drive where free space is at
+     least (8 * 2) + 10 GB = 26 GB</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:27.0pt;line-height:normal'><span lang=EN-US style='font-family:
+"Calibri",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:27.0pt;line-height:normal'><span style='font-family:"Calibri",sans-serif'><img
+border=0 width=493 height=99 id="Picture 6" src="How%20to_files/image002.jpg"></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:27.0pt;line-height:normal'><span lang=EN-US style='font-family:
+"Calibri",sans-serif'>&nbsp;</span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='margin-bottom:0cm;line-height:normal;vertical-align:
+     middle'><span lang=EN-US style='font-family:"Calibri",sans-serif'>If we
+     accidentally select a drive which does not have enough free space as per
+     above calculations, this message will be shown:</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:27.0pt;line-height:normal'><span lang=EN-US style='font-family:
+"Calibri",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:27.0pt;line-height:normal'><span style='font-family:"Calibri",sans-serif'><img
+border=0 width=557 height=146 id="Picture 5" src="How%20to_files/image003.jpg"
+alt="A screenshot of a computer error&#10;&#10;Description automatically generated"></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:27.0pt;line-height:normal'><span lang=EN-US style='font-family:
+"Calibri",sans-serif'>&nbsp;</span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='margin-bottom:0cm;line-height:normal;vertical-align:
+     middle'><span lang=EN-US style='font-family:"Calibri",sans-serif'>Once you
+     select the drive with right amount of space, it will show how much free
+     space would be left in that drive after PageFile is configured and Memory
+     Dump is captured.</span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;line-height:normal;vertical-align:
+     middle'><span lang=EN-US style='font-family:"Calibri",sans-serif'>Then it
+     will automatically configure Pagefile in chosen drive + change Memory Dump
+     location to chosen drive + configure it to capture a Full Memory Dump +
+     enable NMI in case we need to capture Memory Dump through NMI Interrupt of
+     Serial Console.</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:27.0pt;line-height:normal'><span lang=EN-US style='font-family:
+"Calibri",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:27.0pt;line-height:normal'><span style='font-family:"Calibri",sans-serif'><img
+border=0 width=569 height=247 id="Picture 4" src="How%20to_files/image004.jpg"></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:27.0pt;line-height:normal'><span lang=EN-US style='font-family:
+"Calibri",sans-serif'>&nbsp;</span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='margin-bottom:0cm;line-height:normal;vertical-align:
+     middle'><span lang=EN-US style='font-family:"Calibri",sans-serif'>At the
+     end, it will ask whether you want to restart the server now or later.</span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;line-height:normal;vertical-align:
+     middle'><span lang=EN-US style='font-family:"Calibri",sans-serif'>If you
+     chose No, the server will not restart now and you can chose to restart it
+     later when suitable.</span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;line-height:normal;vertical-align:
+     middle'><span lang=EN-US style='font-family:"Calibri",sans-serif'>This
+     message will be displayed if N is chosen</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:27.0pt;line-height:normal'><span lang=EN-US style='font-family:
+"Calibri",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:27.0pt;line-height:normal'><span style='font-family:"Calibri",sans-serif'><img
+border=0 width=275 height=99 id="Picture 3" src="How%20to_files/image005.jpg"
+alt="A white background with black text&#10;&#10;Description automatically generated"></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:27.0pt;line-height:normal'><span style='font-family:"Calibri",sans-serif'>&nbsp;</span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='margin-bottom:0cm;line-height:normal;vertical-align:
+     middle'><span style='font-family:"Calibri",sans-serif'>If you need to test
+     whether the Memory Dump is collected successfully</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:27.0pt;line-height:normal'><span style='font-family:"Calibri",sans-serif'>OR</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:27.0pt;line-height:normal'><span style='font-family:"Calibri",sans-serif'>If
+you need to collect the Memory Dump when the issue resurfaces, you can send NMI
+interrupt to the virtual machine by following below clicks:</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:27.0pt;line-height:normal'><span style='font-family:"Calibri",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:27.0pt;line-height:normal'><span style='font-family:"Calibri",sans-serif'><img
+border=0 width=440 height=457 id="Picture 2" src="How%20to_files/image006.jpg"></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:"Calibri",sans-serif'>&nbsp;</span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='margin-bottom:0cm;line-height:normal;vertical-align:
+     middle'><span style='font-family:"Calibri",sans-serif'>Below screen will
+     show suggesting that the Memory Dump is in process of collection. It goes
+     through mentioned three stages. The server will restart automatically
+     after it has collected the Memory Dump file. </span></li>
+ <li class=MsoNormal style='margin-bottom:0cm;line-height:normal;vertical-align:
+     middle'><span style='font-family:"Calibri",sans-serif'>The amount of time
+     the dump collection takes depends upon the size of RAM in the virtual
+     machine. The smaller the RAM, the quicker the dump file is generated.</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:"Calibri",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:27.0pt;line-height:normal'><span style='font-family:"Calibri",sans-serif'><img
+border=0 width=579 height=549 id="Picture 1" src="How%20to_files/image007.jpg"></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:"Calibri",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
